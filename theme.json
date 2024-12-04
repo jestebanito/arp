@@ -113,7 +113,7 @@
 						"min": "1.125rem"
 					},
 					"name": "Medium",
-					"size": "1.38rem",
+					"size": "1.125rem",
 					"slug": "medium"
 				},
 				{
@@ -122,7 +122,7 @@
 						"min": "1.56rem"
 					},
 					"name": "Large",
-					"size": "1.38rem",
+					"size": "1.56rem",
 					"slug": "large"
 				},
 				{
@@ -131,7 +131,7 @@
 						"min": "1.95rem"
 					},
 					"name": "Extra Large",
-					"size": "1.75rem",
+					"size": "1.95rem",
 					"slug": "x-large"
 				},
 				{
@@ -140,7 +140,7 @@
 						"min": "2.44rem"
 					},
 					"name": "Bombo Claat",
-					"size": "2.15rem",
+					"size": "2.44rem",
 					"slug": "bombo-claat"
 				}
 			],
