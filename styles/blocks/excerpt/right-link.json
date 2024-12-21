@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Right Link",
+  "slug": "right-link",
+  "blockTypes": ["core/post-excerpt"],
+  "styles": {
+    "elements": {
+      "link": {
+        "css": "text-align: right!important; text-decoration: none!important; display: block!important;"
+      }
+    }
+  }
+}
