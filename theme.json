@@ -56,7 +56,7 @@
 				},
 				{
 					"name": "X-Small",
-					"size": "clamp(10px, 2vw, 20px)",
+					"size": "clamp(16px, 2vw, 25px)",
 					"slug": "x-small"
 				},
 				{
