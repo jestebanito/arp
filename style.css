@@ -14,3 +14,205 @@ Text Domain: arp2024
 Tags: 
 */
 
+/* CUSTOM CSS */
+
+
+/* Home Page */
+@media (width <= 781px) {
+    /* 	reset the padding when it is on mobile devices */
+        .home-services-section  .wp-block-columns {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+}
+    
+@media (width <= 600px) {
+    .wp-block-group.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid {
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+}
+
+/* Button Group Icons in Home Page */
+@media (width < 600px) {
+    .wp-block-group.is-layout-grid.wp-container-core-group-is-layout-11.wp-block-group-is-layout-grid {
+        grid-template-columns: 1fr;
+        max-width: 200px;
+    }
+}
+
+.icon-buttons a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+/* Services Page */
+@media (width <= 781px) {
+/* 	reset the padding when it is on mobile devices */
+    .services-page  .wp-block-column:has(figure) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+/* image always stack on the top of the text */
+    .services-page :nth-child(odd) {
+        flex-direction: column-reverse
+    }
+    
+/* services page sub-headers */
+    h2.wp-block-heading.has-text-align-left.has-dark-blue-color.has-text-color.has-link-color.wp-elements-8a723776acbfc27b4b222607406246ce,
+    h2.wp-block-heading.has-dark-blue-color.has-text-color.has-link-color.wp-elements-d39685631a5c60d1f4d8eb3463522e7f {
+        text-align: center;	
+    }
+}
+
+/* Insights Page */
+@media (width <= 600px) {
+    .insights-page .blog-post-loop figure.wp-block-post-featured-image {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/* Single Post Page */
+@media (width <= 600px) {
+    .recent-post-section figure.wp-block-post-featured-image {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .single.single-post main {
+        padding-top: 0 !important;
+    }
+}
+
+/* All Pages */
+@media (width < 600px) {
+    main.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+            padding-top: 0 !important;
+    }
+    
+    .is-layout-constrained > .alignwide {
+        margin-top: 0;
+    }
+    
+    h1.has-text-align-center.has-dark-blue-color {
+        color: var(--wp--preset--color--snow-white) !important;
+        background-color: #16467B !important;
+        padding: 2rem 0;
+        font-weight: 400;
+    }
+}
+
+div.wp-block-group.icon-buttons {
+    transition: transform 0.2s ease-in-out !important;
+}
+
+div.wp-block-group.icon-buttons:hover {
+    transform: translateY(-5px) !important;
+}
+
+/* Global Body Background Color */
+body {
+    background-color: #F9FAFB !important;
+}
+
+
+/* Contact Form 7 CSS */
+.wpcf7 {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto !important;
+}
+
+.wpcf7 input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 0 6px 5px;
+}
+
+.wpcf7 p {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 2px solid #202020;
+    border-radius: 8px;
+    font-size: var(--wp--preset--font-size--base) !important;
+    width: 100%;
+    max-width: 550px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border: 2px solid #1A86B2 !important;
+    outline: 1px solid #1A86B2 !important;
+}
+
+label {
+    color: #16467B;
+    font-size: var(--wp--preset--font-size--base) !important;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #1A86B2, #16467B);
+    border: none;
+    font-size: var(--wp--preset--font-size--medium) !important;
+    padding: 8px 0.67rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    border-color: 2px solid #1A86B2 !important;
+}
+
+
+/* Hamburger Menu CSS */
+@media (width < 600px) {
+	.wp-block-navigation.items-justified-right {
+		--navigation-layout-justification-setting: center !important;
+		--navigation-layout-justify: center !important;
+	}
+	
+	.wp-block-navigation__responsive-container-close {
+		top: 18px !important;
+	}
+	
+	.wp-block-navigation .wp-block-navigation-item__label,
+	.wp-block-navigation .wp-block-buttons>.wp-block-button {
+		font-size: var(--wp--preset--font-size--large) !important;
+	}
+
+	.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+		padding-top: calc(40%) !important;
+	}
+}
+
+/* Change Default Upward Animation to Normal Fade-in Animation */
+@keyframes overlay-menu__fade-in-animation {
+	0% {
+    	opacity: 0;
+    	transform: translateY(0); /* Removes default upward animation */
+  	}
+  	100% {
+    	opacity: 1;
+    	transform: translateY(0); /* Keeps the position unchanged */
+  	}
+}
+
+
+
+
+
