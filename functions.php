@@ -11,3 +11,8 @@ function arp_scripts() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'arp_scripts' );
+
+function current_year() {
+    return date('Y');
+}
+add_shortcode('year', 'current_year');
